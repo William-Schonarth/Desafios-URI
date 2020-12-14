@@ -1,11 +1,10 @@
 var input = require('fs').readFileSync('stdin', 'utf8');
 var lines = input.split('\n');
 
-let A = lines.shift();
-let B = lines.shift();
-let C = lines.shift();
-let D = lines.shift();
+let funcionario = lines.shift();
+let horasTrabalhadas = lines.shift();
+let valorHora = lines.shift(); 
+let salario = (valorHora * horasTrabalhadas).toFixed(2);
 
-let DIFERENCA = ((A * B) - (C * D));
-
-console.log(`DIFERENCA = ${DIFERENCA}`);
+console.log(`NUMBER = ${funcionario}`);
+console.log(`SALARY = U$ ${salario}`);
